@@ -125,7 +125,7 @@ sub_data %>%
   arrange(desc(fatalities)) %>%
   ggplot(aes(fct_reorder(evtype, fatalities), fatalities)) +
    geom_bar(stat="identity", fill= "red") +
-   labs(title = "Most harmful weather\n  events by Fatalities",
+   labs(title = "Most harmful weather events by Fatalities",
            x = "", y = "fatalities") +
   coord_flip()
 ```
