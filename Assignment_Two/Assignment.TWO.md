@@ -108,7 +108,7 @@ sub_data  %>%
   arrange(desc(injuries)) %>%
   ggplot(aes(fct_reorder(evtype, injuries), injuries)) +
    geom_bar(stat="identity", fill= "darkorange") +
-   labs(title = "Most harmful weather events by Injuries",
+   labs(title = "Most harmful weather events by injuries",
         x = "",
         y = "injuries") +
    coord_flip()
@@ -125,7 +125,7 @@ sub_data %>%
   arrange(desc(fatalities)) %>%
   ggplot(aes(fct_reorder(evtype, fatalities), fatalities)) +
    geom_bar(stat="identity", fill= "red") +
-   labs(title = "Most harmful weather events by Fatalities",
+   labs(title = "Most harmful weather events by fatalities",
            x = "", y = "fatalities") +
   coord_flip()
 ```
@@ -243,13 +243,9 @@ sub_data_multip %>%
             coord_flip()
 ```
 
-```
-## Selecting by TotDamages
-```
-
 ![](Assignment.TWO_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
-### Conclusion
+## Conclusion
   
   Floods, Hurricanes and Tornadoes cause the most overall economic damages. Tornadoes are also the most harmful type of event in terms of population health.
   
